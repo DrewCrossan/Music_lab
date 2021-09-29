@@ -17,8 +17,8 @@ def select_all():
     return albums
 
 def save(album):
-    sql = "INSERT INTO albums (album_name, genre, artist) VALUES (%s, %s, %s) RETURNING *"
-    values = [album.album_name, album.genre, album.artist.artist_name]
+    sql = "INSERT INTO albums (album_name, genre, artist, artist_id) VALUES (%s, %s, %s, %s) RETURNING *"
+    values = [album.album_name, album.genre, album.artist.artist_name, album.artist.id]
     results = run_sql(sql, values)
     id = results[0]['id']
     album.id = id

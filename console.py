@@ -14,6 +14,16 @@ artist_repository.save(artist2)
 
 album1 = Album("Pray for plagues", "Metal", artist1)
 album_repository.save(album1)
+album2 = Album("Suicide Season", "Metal", artist1)
+album_repository.save(album2)
+album3 = Album("Sempiternal", "Metal", artist1)
+album_repository.save(album3)
+
+album4 = Album("Flume (Deluxe Edition)", "Electronic", artist2)
+album_repository.save(album4)
+album5 = Album("Skin", "Electronic", artist2)
+album_repository.save(album5)
+
 
 
 
